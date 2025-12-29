@@ -7,8 +7,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "CJLU",
+    url: "https://www.cjlu.edu.cn/",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
@@ -25,7 +25,7 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "xxxx exp",
 
       displayFooter: true,
 
@@ -44,7 +44,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "XXXX实验",
 
       displayFooter: true,
 
@@ -57,11 +57,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-      "/zh/demo/encrypt.html": {
+      "/zh/experiment/first.html": {
         hint: "Password: 1234",
         password: "1234",
       },
