@@ -7,13 +7,13 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "CJLU",
+    name: "Paul",
     url: "https://www.cjlu.edu.cn/",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "jiliang-ca-lab/jiliang_ca_docs",
 
   docsDir: "src",
 
@@ -29,9 +29,12 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
+      // Disable the "Edit this page" link for this locale
+      editLink: false,
+
+      // metaLocales: {
+      //   editLink: "Edit this page on GitHub",
+      // },
     },
 
     /**
@@ -48,18 +51,21 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
+      // Disable the "Edit this page" link for Chinese locale
+      editLink: false,
+
+      // // page meta
+      // metaLocales: {
+      //   editLink: "在 GitHub 上编辑此页",
+      // },
     },
   },
 
   encrypt: {
     config: {
-      "/zh/experiment/first.html": {
-        hint: "Password: 1234",
-        password: "1234",
+      "/zh/lab/demo.html": {
+        hint: "示例",
+        password: "123123",
       },
     },
   },
@@ -98,13 +104,11 @@ export default hopeTheme({
     tasklist: true,
     vPre: true,
 
-    // uncomment these if you need TeX support
-    // math: {
-    //   // install katex before enabling it
-    //   type: "katex",
-    //   // or install @mathjax/src before enabling it
-    //   type: "mathjax",
-    // },
+    // TeX 支持（启用 KaTeX 渲染数学公式）
+    math: {
+      // install katex before enabling it
+      type: "katex",
+    },
 
     // install chart.js before enabling it
     // chartjs: true,
@@ -137,21 +141,21 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
-    components: {
-      components: ["Badge", "VPCard"],
-    },
+    // components: {
+    //   components: ["Badge", "VPCard"],
+    // },
 
-    icon: {
-      prefix: "fa6-solid:",
-    },
+    // icon: {
+    //   prefix: "fa6-solid:",
+    // },
 
     // Install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {

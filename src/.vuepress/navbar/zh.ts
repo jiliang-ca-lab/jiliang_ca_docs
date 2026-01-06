@@ -5,8 +5,8 @@ export const zhNavbar = navbar([
   {
     text: "实验文档",
     icon: "flask",
-    link: "/zh/experiment/",
-    prefix: "/zh/experiment/",
+    link: "/zh/lab/",
+    prefix: "/zh/lab/",
 
   },
 ]);

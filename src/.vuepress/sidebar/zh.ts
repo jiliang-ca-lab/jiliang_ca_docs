@@ -2,14 +2,14 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
   "/zh/": [
-    "",
+    "lab/0-1实验介绍.md",
     {
-      text: "实验文档",
-      icon: "flask",
-      prefix: "experiment/",
+      text: "基础与衔接",
+      link: "lab/基础与衔接/",
+      collapsible: true,
+      prefix: "lab/基础与衔接/",
       children: "structure",
-      link: "experiment/",
     },
-
+    "lab/demo.md",
   ],
 });
