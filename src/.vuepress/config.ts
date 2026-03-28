@@ -20,6 +20,10 @@ export default defineUserConfig({
 
   theme,
 
+  head: [
+    ["meta", { name: "referrer", content: "no-referrer" }],
+  ],
+
   // Enable it with pwa
   // shouldPrefetch: false,
 });
