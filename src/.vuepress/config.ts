@@ -3,7 +3,8 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/jiliang_ca_docs/",
+  // base: "/jiliang_ca_docs/",
+  base: "/",
 
   locales: {
     "/": {
