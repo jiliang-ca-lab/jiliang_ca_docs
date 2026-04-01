@@ -177,13 +177,37 @@ endmodule
 
 模块的创建部分是一样的。
 
-注意这是刚刚的led模块的上一层，这样我们才能给定输入输出，进而测试出这个模块所实现的功能是否正常。
+注意这是刚刚的led模块的上一层，这样我们才能给定输入输出，进而测试出这个模块所实现的功能是否正常。这部分的代码功能如下：
+
+- 模块定义，包含变量定义，引用下层led模块的声明。
+- 测试进程`initial begin `to`end`。
+
+之后点击`run simulation`，若一切正常，log区域会打印` ALL TESTS PASS!`，波形如图。我们分别对sw进行了三次输入，模块输出的信号均符合设计，说明该模块通过了仿真，可以进行后续流程。
+
+::: warning
+通常情况下，如需再次仿真或设计文件有修改，都需要重新运行`run simulation`后再进行。
+:::
 
 ![](https://gitee.com/paul_jiang/img/raw/master/simu1.png)
 
 #### 约束文件
 
+在之前的操作中，dip_sw和leds都是我们自己定义的，vivado当然不知道这些接口该接到fpga芯片的哪个管脚。这时候，**约束文件**就派上用场了。在这个文件中，我们会定义顶层模块的接口以何种方式连接到芯片管脚上。
+
+按照如图所示的操作，为项目添加一个约束。通常这类文件的后缀是`.xdc`。
+
 ![](https://gitee.com/paul_jiang/img/raw/master/con1.png)
+
+这部分的代码非常整齐，含义如下：
+
+```
+set_property -dict {PACKAGE_PIN B24 IOSTANDARD LVCMOS33} [get_ports {leds[0]}]
+//这行代码的作用就是：把你设计文件里的leds[0]信号，物理绑定到FPGA芯片的B24引脚上，并且设置电平为3.3V。
+```
+
+这里我们是在固定的平台上进行开发，可参考原理图确定每个引脚接的外设。在后续实验中会给定约束文件，仅需了解即可。
+
+将所有的接口都一一对应：
 
 ```verilog
 #LEDS
@@ -239,3 +263,20 @@ set_property -dict {PACKAGE_PIN R6 IOSTANDARD LVCMOS33} [get_ports {dip_sw[30]}]
 set_property -dict {PACKAGE_PIN R2 IOSTANDARD LVCMOS33} [get_ports {dip_sw[31]}]
 ```
 
+## 上板测试
+
+点击`generate bitstream`，vivado会自己完成所有前序流程并输出比特流，将该比特流文件上传至实验平台即可。
+
+比特流文件的位置通常在：
+
+```
+你的项目所在地址\项目名称\项目名称.runs\impl_1\顶层模块名称.bit
+```
+
+上传比特流文件到线上平台。
+
+![](https://gitee.com/paul_jiang/img/raw/master/shangban.png)
+
+拨动开关，可以控制led的亮灭。
+
+![image-20260401130341726](C:\Users\Paul\AppData\Roaming\Typora\typora-user-images\image-20260401130341726.png)
