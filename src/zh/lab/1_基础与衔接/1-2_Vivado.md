@@ -279,4 +279,4 @@ set_property -dict {PACKAGE_PIN R2 IOSTANDARD LVCMOS33} [get_ports {dip_sw[31]}]
 
 拨动开关，可以控制led的亮灭。
 
-![image-20260401130341726](C:\Users\Paul\AppData\Roaming\Typora\typora-user-images\image-20260401130341726.png)
+![](https://gitee.com/paul_jiang/img/raw/master/ttutu.png)
