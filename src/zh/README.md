@@ -30,7 +30,7 @@ features:
     description: 实验
 
 copyright: false
-footer: @CJLU
+footer: © CJLU
 ---
 
 欢迎来到实验课程主页。
