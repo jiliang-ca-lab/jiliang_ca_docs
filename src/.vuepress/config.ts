@@ -9,13 +9,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "xxxx exp",
-      description: "A docs for xxxx exp",
+      title: "CA exp",
+      description: "Docs for CA exp",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "xxxx实验",
-      description: "xxxx实验文档",
+      title: "计算机组成原理实验",
+      description: "计算机组成原理实验文档",
     },
   },
 

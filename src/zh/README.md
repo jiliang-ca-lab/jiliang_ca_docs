@@ -7,8 +7,8 @@ bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: 实验课程：xxxx 实验
-tagline: 本站用于记录课程实验目的、步骤与结果，便于教学与复现。
+heroText: 实验课程：计算机组成原理实验
+tagline: 本站用于记录课程实验相关文档。
 actions:
   - text: 实验文档
     icon: flask
@@ -26,11 +26,11 @@ features:
         icon: users
         link: ./
 
-  - header: 教学要点
-    description: 每篇实验包含目的、步骤、结果与讨论，便于学生记录与教师批阅。
+  - header: 计算机组成原理 | 计算机体系结构
+    description: 实验
 
 copyright: false
-footer: 使用 VuePress Theme Hope 主题 | 版权所有 © CJLU
+footer: @CJLU
 ---
 
 欢迎来到实验课程主页。

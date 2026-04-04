@@ -25,7 +25,7 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "xxxx exp",
+      footer: "计算机组成原理实验",
 
       displayFooter: true,
 
@@ -47,7 +47,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "XXXX实验",
+      footer: "计算机组成原理实验",
 
       displayFooter: true,
 
@@ -67,6 +67,10 @@ export default hopeTheme({
         hint: "示例",
         password: "123123",
       },
+      "/zh/lab/2_alu/2-2_rs.html": {
+        hint: "参考代码",
+        password: "000000",
+      }
     },
   },
 

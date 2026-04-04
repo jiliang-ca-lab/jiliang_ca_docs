@@ -13,6 +13,13 @@ export const zhSidebar = sidebar({
       prefix: "lab/1_基础与衔接/",
       children: "structure",
     },
+    {
+      text: "实验一 ALU实验",
+      link: "lab/2_alu/",
+      collapsible: true,
+      prefix: "lab/2_alu/",
+      children: "structure",
+    },
     "lab/demo.md",
   ],
 });
