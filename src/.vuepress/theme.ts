@@ -71,7 +71,7 @@ export default hopeTheme({
         hint: "参考代码",
         password: "000000",
       },
-      "/zh/lab/3_寄存器与主存/3-3-regaws.html": {
+      "/zh/lab/3_寄存器与主存/3_3-regaws.html": {
         hint: "参考代码",
         password: "000000",
       }
