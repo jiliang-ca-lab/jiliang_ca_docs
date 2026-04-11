@@ -70,6 +70,10 @@ export default hopeTheme({
       "/zh/lab/2_alu/2-2_rs.html": {
         hint: "参考代码",
         password: "000000",
+      },
+      "/zh/lab/3_寄存器与主存/3-3-regaws.html": {
+        hint: "参考代码",
+        password: "000000",
       }
     },
   },

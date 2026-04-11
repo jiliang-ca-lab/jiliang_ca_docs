@@ -20,6 +20,13 @@ export const zhSidebar = sidebar({
       prefix: "lab/2_alu/",
       children: "structure",
     },
+    {
+      text: "实验二 寄存器与主存实验",
+      link: "lab/3_寄存器与主存/",
+      collapsible: true,
+      prefix: "lab/3_寄存器与主存/",
+      children: "structure",
+    },
     "lab/demo.md",
   ],
 });
